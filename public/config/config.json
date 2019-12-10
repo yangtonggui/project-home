@@ -1,0 +1,62 @@
+{
+  "url": {
+    "base": "http://gspace.gaeainfo.com",
+    "resource": "//122.112.227.227/gspace",
+    "api-examples": "http://localhost:8080/gspace-api-examples",
+    "comps-examples": "http://gspace.gaeainfo.com/comps-examples",
+    "pro-examples": "http://gspace.gaeainfo.com/pro-examples"
+  },
+  "menu": [
+    {
+      "path": "/",
+      "label": "首页",
+      "target": "/",
+      "children": []
+    },
+    {
+      "path": "example-list",
+      "label": "示例",
+      "children": [
+        {
+          "path": "api-examples",
+          "label": "API示例",
+          "target": "../example-list/api"
+        },
+        {
+          "path": "comps-examples",
+          "label": "组件示例",
+          "target": "../example-list/comps"
+        },
+        {
+          "path": "pro-examples",
+          "label": "应用示例",
+          "target": "../example-list/pro"
+        }
+      ]
+    },
+    {
+      "path": "tools",
+      "label": "工具",
+      "target": "tools",
+      "children": [
+        {
+          "path": "placement-tool",
+          "label": "模型摆放工具",
+          "link": "http://gspace.gaeainfo.com/placement-tool"
+        }
+      ]
+    },
+    {
+      "path": "guide",
+      "label": "文档",
+      "target": "../guide",
+      "children": []
+    },
+    {
+      "path": "api",
+      "target": "../api",
+      "label": "开发指南",
+      "children": []
+    }
+  ]
+}

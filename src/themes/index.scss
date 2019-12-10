@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'PingFang Regular';
+  src: url('assets/fonts/pingfang/PingFang\ Regular.ttf');
+}
+
+@font-face {
+  font-family: 'PingFang Medium';
+  src: url('assets/fonts/pingfang/PingFang\ Medium.ttf');
+}
+
+#innerPage {
+  width: 100%;
+  height: calc(100% - 60px);
+  border: none;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar,
+  .s-menu .guide,
+  .s-menu .tools,
+  .s-menu .api {
+    display: none;
+  }
+
+  .home {
+    .video-bg {
+      width: 100%;
+      height: 100%;
+      video {
+        width: auto;
+      }
+      .logo {
+        left: 10% !important;
+      }
+    }
+  }
+  .example-list {
+    .list {
+      width: 100% !important;
+      .cards {
+        justify-content: space-around !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 499px) {
+  .home {
+    .bgccontent {
+      .bgctitle {
+        text-align: center;
+      }
+      .bgcclik {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translate(-50%) !important;
+        margin-left: 0 !important;
+      }
+      .bgctitle,
+      .bgctext,
+      .bgcclik {
+        margin: 5px 0 !important;
+        font-size: 28px !important;
+      }
+    }
+    .character {
+      .content {
+        h1 {
+          font-size: 28px !important;
+        }
+        p {
+          font-size: 26px !important;
+        }
+      }
+      .base {
+        h1 {
+          font-size: 22px !important;
+        }
+        p {
+          font-size: 20px !important;
+        }
+        #logo {
+          transform: translateX(10%);
+        }
+      }
+    }
+    .project {
+      .title {
+        font-size: 28px !important;
+      }
+      .logo3d {
+        height: 200px !important;
+        background-size: 80% !important;
+        background-repeat: no-repeat !important;
+      }
+      .projectCente {
+        h3 {
+          font-size: 22px !important;
+        }
+        p {
+          font-size: 20px !important;
+        }
+      }
+    }
+    .caseshow {
+      h1 {
+        font-size: 28px !important;
+      }
+      p {
+        font-size: 21px !important;
+      }
+    }
+    .cooperative {
+      h1 {
+        font-size: 28px !important;
+      }
+      .cooperativeitem {
+        width: 40%;
+        height: 50px !important;
+        margin-left: 6.7% !important;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .home {
+    .content {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .home {
+    .projectrtitle {
+      margin-top: 40px !important;
+    }
+    .projectCente {
+      text-align: center !important;
+    }
+    .cooperative {
+      .logo-vspot,
+      .logo-cspot {
+        display: none;
+      }
+    }
+  }
+}
